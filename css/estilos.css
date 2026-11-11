@@ -318,3 +318,11 @@ html {scroll-behavior:smooth;scroll-padding-top:85px}
 .pagina-inicio a:focus-visible,.pagina-inicio button:focus-visible{outline:3px solid #bd7d42;outline-offset:4px}
 @media(max-width:800px){.pagina-inicio .inicio-pasos{grid-template-columns:1fr;max-width:550px}.pagina-inicio .inicio-paso-tarjeta>img{height:250px}}
 @media(prefers-reduced-motion:reduce){.pagina-inicio .inicio-paso-tarjeta>img{transition:none}}
+
+/* Corrección: la regla global main { max-width:800px } comprimía toda la portada. */
+.pagina-inicio > main { width:100%; max-width:none; padding:0; margin:0; }
+.pagina-inicio .inicio-pasos { width:100%; grid-template-columns:repeat(3,minmax(0,1fr)); }
+.pagina-inicio .inicio-paso-tarjeta { min-width:0; }
+.pagina-inicio .inicio-paso-contenido h3 { overflow-wrap:break-word; font-size:clamp(21px,2.1vw,26px); }
+@media(max-width:800px) { .pagina-inicio .inicio-pasos { grid-template-columns:1fr; max-width:550px; } }
+
