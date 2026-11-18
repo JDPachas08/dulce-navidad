@@ -1,7 +1,7 @@
 /* Dulce Navidad: interacción de pedidos.
    Sustituye el valor vacío por el número autorizado, solo dígitos: 519XXXXXXXX.
    Mientras esté vacío, nunca se abre una conversación con terceros. */
-const WHATSAPP_NEGOCIO = '';
+const WHATSAPP_NEGOCIO = '51901610918';
 
 document.addEventListener('DOMContentLoaded', () => {
   const dialogo = document.getElementById('pedido-dialogo');
